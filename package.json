@@ -4,9 +4,9 @@
   "description": "A minimal, lightweight and mobile-first starter for creating blazing-fast static blogs",
   "main": "n/a",
   "scripts": {
-    "develop": "yarn run clean && gatsby develop",
-    "build": "yarn run clean && gatsby build",
-    "deploy": "yarn run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "deploy": "gatsby build && gh-pages -d public -b master",
     "clean": "rimraf .cache public",
     "flow": "flow",
     "lint:js": "eslint --cache --ext .js,.jsx .",
@@ -16,7 +16,7 @@
     "test:coverage": "jest --coverage --config ./jest/jest-config.js",
     "test:watch": "jest --watch --config ./jest/jest-config.js"
   },
-  "repository": "https://github.com/alxshelepenok/gatsby-starter-lumen",
+  "repository": "https://github.com/publizm/publizm.github.io.git",
   "author": "Alexander Shelepenok <alxshelepenok@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -46,6 +46,7 @@
     "gatsby-plugin-catch-links": "^2.1.8",
     "gatsby-plugin-feed": "^2.3.11",
     "gatsby-plugin-flow": "^1.1.5",
+    "gatsby-plugin-google-analytics": "^2.1.14",
     "gatsby-plugin-google-gtag": "^1.1.7",
     "gatsby-plugin-manifest": "^2.2.14",
     "gatsby-plugin-netlify": "^2.1.11",
@@ -104,7 +105,7 @@
     "eslint-watch": "6.0.0",
     "flow-bin": "^0.107.0",
     "flow-typed": "^2.6.1",
-    "gh-pages": "2.1.1",
+    "gh-pages": "^2.1.1",
     "identity-obj-proxy": "3.0.0",
     "jest": "24.9.0",
     "jest-cli": "24.9.0",

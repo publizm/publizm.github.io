@@ -6,11 +6,11 @@ const postCssPlugins = require('./postcss-config.js');
 module.exports = {
   pathPrefix: siteConfig.pathPrefix,
   siteMetadata: {
-    url: siteConfig.url,
-    title: siteConfig.title,
-    subtitle: siteConfig.subtitle,
-    copyright: siteConfig.copyright,
-    disqusShortname: siteConfig.disqusShortname,
+    url: 'https://publizm.github.io/',
+    title: 'Publee의 기술노트',
+    subtitle: 'Publee의 기술노트',
+    copyright: '@ALL rights reserved.',
+    disqusShortname: 'publee',
     menu: siteConfig.menu,
     author: siteConfig.author
   },
@@ -130,6 +130,10 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: { trackingId: 'UA-147413543-1' },
+    },
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',
@@ -186,7 +190,7 @@ module.exports = {
         background_color: '#FFF',
         theme_color: '#F7A046',
         display: 'standalone',
-        icon: 'static/photo.jpg'
+        icon: 'static/favi.png'
       },
     },
     'gatsby-plugin-offline',
