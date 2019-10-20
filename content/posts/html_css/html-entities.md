@@ -10,16 +10,18 @@ tags:
   - "Entities"
 description: "Html Entities"
 ---
-# Entities에 대해서 알아보자.
+<span class="notice">
+  <em>Entities에 대해서 알아보자</em>
+</span>
 
-## :pencil2: Html Entities란?
+## Html Entities란?
 HTML 문서를 코딩할때 태그와 혼용되는 것을 막기위해서 브라우저 상에 예약된 문자(Entities)를 사용한다.
 
 ## Entities의 종류
 
 <article class="board-tbl">
 
-|  결과값  |  설명 | Entity Name |
+|  result  |  설명 | Entity Name |
 | :---:  | :------- | :---: |
 | &nbsp; | 띄어쓰기 | `&nbsp;` |
 | **&lt;** | 적은 | `&lt;` |

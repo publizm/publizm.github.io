@@ -9,39 +9,42 @@ tags:
   - "CSS"
 description: "Characteristic of CSS and What is there in CSS Selector"
 ---
-## CSS의 상속관계
-
-## :pencil2: 상속이란?
+## 상속이란?
 상위태그에 적용한 특정 스타일이 하위에도 반영되는 것을 말한다.
 
-상속되는 속성은 다음과 같다.
-**`Font`**에 관한 CSS속성 (font-family, font-weight, font-size, line-height, color ...)
+상속되는 속성은 다음과 같다.<br>
+**Font**에 관한 CSS속성 (font-family, font-weight, font-size, line-height, color ...)
 
-상속되지 않는 속성은 다음과 같다.
-**`box-model`**에 관한 속성 (width, height, margin, padding, border, background ...), position ...
 
-<hr />
+상속되지 않는 속성은 다음과 같다.<br>
+**box-model**에 관한 속성 (width, height, margin, padding, border, background ...), position ...
 
-## :pencil2: Cascading이란?
-CSS에서는 우선순위에 따른 점수가 존재한다.
+<br>
+<br>
+
+## Cascading이란?
+CSS에서는 우선순위에 따른 점수가 존재한다.<br>
 따라서 해당 점수들에 합산에 따라 적용 우선순위가 결정된다.
-이러한 CSS의 특징을 **`Cascading`**이라 한다.
+이러한 CSS의 특징을 **Cascading**이라 한다.
 
 우선 순위를 알아보자.
 
 - 기본적으로 **뒤에 오는 css**가 우선순위가 높다.
 - 우선순위가 같다면 **개수가 많은 css**가 우선순위가 높다.
 
-그리고 __!important > inline style attribute > id(#) > class(.) > tag > *(Universal Selector)__ 순으로 우선순위가 정해집니다.
+> __!important > inline style attribute > id(#) > class(.) > tag > *(Universal Selector)__ 순으로<br>
+우선순위가 정해집니다.
 
-**:bulb:*Tips***<br>
-*!important*와 *inline style arrtibute*는 **최후의 수단**이라 생각하는게 좋고, 사용을 자제하는 것이 좋다.
-이유는 *!important*와 *inline style attribute*는 스타일의 자연스런 흐름을 무시하고 강제하여 적용하게 되어, 혼란을 야기할 수 있기 때문이다.
+<br>
 
+**:bulb:Tips**<br>
+!important와 inline style arrtibute는 **최후의 수단**이라 생각하는게 좋고, 사용을 자제하는 것이 좋다.
+이유는 !important와 inline style attribute는 스타일의 자연스런 흐름을 무시하고 강제하여 적용하게 되어, 혼란을 야기할 수 있기 때문이다.
 
-<hr />
+<br>
+<br>
 
-## :pencil2: CSS 선택자
+## CSS 선택자
 <br>
 <article class="board-tbl">
 

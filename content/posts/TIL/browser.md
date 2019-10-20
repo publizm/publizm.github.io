@@ -9,9 +9,11 @@ tags:
   - "Browser"
 description: "How a Browser works?"
 ---
-> 지극히 주관적인 생각이니 잘못된 정보가 있다면 댓글로....
+<span class="notice">
+  <em>TIL 이므로 잘못된 내용은 댓글 부탁드립니다</em>
+</span>
 
-### 웹 브라우저는 어떻게 동작할까?
+## 웹 브라우저는 어떻게 동작할까?
 > 우리가 흔히 사용하는 브라우저를 동작원리를 이해보자.
 
 - 우리는 어느 사이트를 방문하기 위해 당연한 듯이 주소창에 홈페이지의 도메인(서버를 식별할 수 있는 서버의 이름)을 적는다.
@@ -28,10 +30,10 @@ __*그림으로 알아보자*__
 ![browser works](/images/til/browser_works.jpg "browser works")
 
 <br>
-<hr/>
+<br>
 <br>
 
-### 서버로 받은 데이터를 클라이언트는 어떻게 처리할까?
+## 서버로 받은 데이터를 클라이언트는 어떻게 처리할까?
 > HTML과 CSS는 렌더링 엔진이 처리하고, Javascript는 자바스크립트 엔진이 처리한다.
 
 __*그림으로 알아보자*__
@@ -47,3 +49,22 @@ __*그림으로 알아보자*__
        - 생성된 AST는 인터프리터가 실행할 수 있는 중간 코드인 **바이트 코드**로 변환되어 인터프리터에 의해 실행된다.
  - Script 태그의 위치에 따라 블로킹이 생겨 DOM 생성이 지연될수도 있다. HTML이 DOM객체로 변환되기 이전에 JavaScript가 실행되면 블로킹이된다. 따라서 Script태그 위치는 중요하다.
  - DOM tree, CSSOM tree가 만들어지면, 둘이 합쳐져 Render tree를 만들고, Render tree를 기반으로 painting이 시작되고 웹페이지가 표시된다.
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="reference-site">
+
+  **참고한 사이트**<br>
+
+  [https://poiemaweb.com](https://poiemaweb.com)
+
+</div>

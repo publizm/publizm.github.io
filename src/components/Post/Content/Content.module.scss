@@ -19,6 +19,9 @@
   }
 
   &__body {
+    & * {
+      word-break: keep-all;
+    }
     & figure {
       @include margin-bottom(1);
 
@@ -33,7 +36,7 @@
           font-size: $typographic-base-font-size * 1.6817;
           margin-top: 0;
           @include margin-bottom(1);
-          @include line-height(1.5)
+          @include line-height(1.5);
         }
 
       }
@@ -51,21 +54,45 @@
     }
 
     & a {
-      text-decoration: underline
+      font-weight: 500;
     }
 
     & * {
       max-width: $layout-post-width;
       margin-left: auto;
-      margin-right: auto
+      margin-right: auto;
     }
 
     & img {
       max-width: 100%;
     }
 
-  }
+    h2 {
+      @include padding(0,0,.3,0);
+      border-bottom: .12em solid #4a568c;
+    }
 
+    h3, h4 {
+      &:before {
+        margin-right: .3em;
+        font-weight: 700;
+        color: #0d2bab;
+      }
+    }
+
+    h3 {
+      &:before {
+        content: '#';
+      }
+    }
+
+    h4 {
+      &:before {
+        font-weight: 500;
+        content: '##';
+      }
+    }
+  }
 }
 
 @include breakpoint-md {
@@ -76,7 +103,7 @@
       font-size: $typographic-base-font-size * 3;
       @include line-height(2.25);
       @include margin-top(2.25);
-      @include margin-bottom(1.5)
+      @include margin-bottom(1.5);
     }
 
     &__body {
@@ -87,7 +114,7 @@
       & p {
         font-size: $typographic-base-font-size * 1.125;
         @include line-height(1.125);
-        @include margin-bottom(1.125)
+        // @include margin-bottom(1.125);
       }
 
     }

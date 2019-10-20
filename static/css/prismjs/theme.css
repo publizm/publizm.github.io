@@ -1,7 +1,7 @@
 code[class*=language-],
 pre[class*=language-] {
 	color: #cccccc;
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: FiraCode;
 	font-size: .9em;
 	text-align: left;
 	white-space: pre;
@@ -17,17 +17,18 @@ pre[class*=language-] {
 	-ms-hyphens: none;
 	hyphens: none
 }
+
 code[class*=language-]::-moz-selection,
-code[class*=language-]::-moz-selection,
+code[class*=language-] *::-moz-selection,
 pre[class*=language-]::-moz-selection,
-pre[class*=language-]::-moz-selection {
-	background: #073642
+pre[class*=language-] *::-moz-selection {
+	background: #073642;
 }
 code[class*=language-]::selection,
-code[class*=language-]::selection,
+code[class*=language-] *::selection,
 pre[class*=language-]::selection,
-pre[class*=language-]::selection {
-	background: #073642
+pre[class*=language-] *::selection {
+	background: #073642;
 }
 pre[class*=language-] {
 	padding: 1em;

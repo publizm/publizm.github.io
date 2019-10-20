@@ -13,13 +13,13 @@ $color-gray-border: lighten($color-base, 77%);
 $color-gray-bg: lighten($color-base, 79%);
 
 // Typographic
-$typographic-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$typographic-font-family: Notosans, sans-serif;
 
 $typographic-root-font-size: 100;
-$typographic-base-font-size: 14px;
+$typographic-base-font-size: 15px;
 $typographic-small-font-size: 12px;
 
-$typographic-base-line-height: 1.625;
+$typographic-base-line-height: 2;
 
 $typographic-base-font-color: $color-base;
 $typographic-link-p-font-color: $color-primary;

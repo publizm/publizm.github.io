@@ -13,10 +13,12 @@ tags:
   - "counter-increment"
 description: "CSS Counter Attribute"
 ---
-## CSS의 content 속성을 활용하는 방법을 알아보자.
+<span class="notice">
+  <em>CSS의 content 속성을 활용하는 방법을 알아보자.</em>
+</span>
 
-### content 요소란?
-content속성은 ::before 및 ::after 유사 요소 와 함께 생성 된 내용을 삽입하는 데 사용된다.
+## content 요소란?
+content 속성은 ::before 및 ::after 유사 요소 와 함께 생성 된 내용을 삽입하는 데 사용된다.
 
 
 ##### :zap: 지원하는 브라우저 및 버전
@@ -24,19 +26,20 @@ content속성은 ::before 및 ::after 유사 요소 와 함께 생성 된 내용
 
 |  **속성**  | ![chrome](/icons/chrome.jpg "chrome") | ![ie edge](/icons/edge.jpg "ie edge") | ![ie](/icons/ie.jpg "ie") | ![firefox](/icons/firefox.jpg "firefox") | ![safari](/icons/safari.jpg "safari") | ![opera](/icons/opera.jpg "opera") |
 | :---:  | :---: | :---: | :---: | :---: | :---: | :---: |
-| __[content]]__ | O | O | 8.0~ | 3.5~ | O | 4.0~ |
+| __[content]__ | O | O | 8.0~ | 3.5~ | O | 4.0~ |
 
 </article>
 
 <br>
-<hr/>
 <br>
 
-### counter 속성을 사용해보자
+## counter 속성 사용법
 counter 속성을 html문서에 쓰지 않고, css로 숫자를 생성하면서 자동으로 번호를 매길 수 있게 한다.
 counter를 쓸때는 counter-reset 속성과 counter-increment 속성을 함께 사용해야 한다.
 
-#### counter-reset
+<br>
+
+### counter-reset
 counter-reset은 카운터 이름과 시작값을 설정하는 속성이다.
 
 ``` css
@@ -46,6 +49,7 @@ target {counter-reset: 카운터이름 숫자;}
 */
 ```
 
+<br>
 
 ##### :zap: 지원하는 브라우저 및 버전
 <article class="browser-tbl">
@@ -56,10 +60,9 @@ target {counter-reset: 카운터이름 숫자;}
 
 </article>
 
-<br>
-<br>
+<hr class="sub" />
 
-#### counter-increment
+### counter-increment
 counter-reset으로 설정한 값을 증가시키는 역할
 
 ``` css
@@ -72,6 +75,8 @@ children {counter-increment: count -1;} /* -1씩 감소 */
 children {counter-increment: count 1 count2 -1;} /* count는 1씩 증가, count2는 -1씩 감소 */
 ```
 
+<br>
+
 ##### :zap: 지원하는 브라우저 및 버전
 <article class="browser-tbl">
 
@@ -82,8 +87,9 @@ children {counter-increment: count 1 count2 -1;} /* count는 1씩 증가, count2
 </article>
 
 <br>
+<br>
 
-#### counter-reset과 counter-increment 사용예시
+## counter-reset과 counter-increment 사용예시
 
 ##### 결과화면
 ![counter_ex](/images/css/counter.jpg "counter_ex")
