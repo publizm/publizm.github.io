@@ -3,35 +3,35 @@
 module.exports = {
   url: 'https://publizm.netlify.com/',
   pathPrefix: '/',
-  title: 'Publee의 기술노트',
-  subtitle: 'Publee Technical blog',
+  title: "Publee's velog",
+  subtitle: "Publee's velog",
   copyright: '© All rights reserved.',
-  disqusShortname: 'publee',
-  postsPerPage: 4,
+  disqusShortname: 'Publee',
+  postsPerPage: 5,
   googleAnalyticsId: 'UA-73379983-2',
   useKatex: false,
   menu: [
     {
       label: 'Articles',
-      path: '/'
+      path: '/',
     },
     {
       label: 'Categories',
-      path: '/categories'
+      path: '/categories',
     },
     {
       label: 'About me',
-      path: '/pages/about'
+      path: '/pages/about',
     },
     {
       label: 'Contact me',
-      path: '/pages/contacts'
-    }
+      path: '/pages/contacts',
+    },
   ],
   author: {
     name: 'Publee',
-    photo: '/images/logo.png',
-    bio: 'Publee의 기술노트',
+    photo: '/images/publee.png',
+    bio: "Publee's velog",
     contacts: {
       email: 'publizm@gmail.com',
       facebook: '#',
@@ -44,7 +44,7 @@ module.exports = {
       instagram: '_publee',
       line: '',
       gitlab: '',
-      weibo: ''
-    }
-  }
+      weibo: '',
+    },
+  },
 };

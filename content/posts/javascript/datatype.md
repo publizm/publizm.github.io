@@ -1,5 +1,5 @@
 ---
-title: 데이터 타입
+title: dataType
 date: "2019-10-13"
 template: "post"
 draft: false
@@ -19,8 +19,24 @@ description: "원시 타입과 객체 타입을 알아보자"
   <em>TIL 내용이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
 
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [원시타입의 종류](#원시타입의-종류)
+  - [숫자 타입(number)](#숫자-타입number)
+      - [숫자 타입의 특별한 값](#숫자-타입의-특별한-값)
+  - [문자열 타입(String)](#문자열-타입string)
+      - [템플릿 리터럴](#템플릿-리터럴)
+  - [불리언 타입(Boolean)](#불리언-타입boolean)
+  - [undefined 타입](#undefined-타입)
+  - [null 타입](#null-타입)
+  - [symbol 타입](#symbol-타입)
+- [객체 타입](/posts/javascript/Object)
+
+</div>
+
 ## 원시타입의 종류
-<br>
 
 ### 숫자 타입(number)
 
@@ -282,7 +298,7 @@ console.log(obj.key); // undefined
 
 <div class="reference-site">
 
-  **참고한 사이트**<br>
+  **Reference**<br>
 
   [https://poiemaweb.com](https://poiemaweb.com)
 

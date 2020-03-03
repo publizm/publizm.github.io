@@ -132,8 +132,17 @@ ul {
   & li {
     padding: 0 5px;
     margin-bottom: 10px;
-    ul {
-      list-style: circle;
+
+    & ul {
+      list-style: disc;
+
+      & li {
+
+        & ul {
+          list-style: circle;
+
+        }
+      }
     }
   }
 }

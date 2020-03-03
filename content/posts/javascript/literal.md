@@ -1,5 +1,5 @@
 ---
-title: About Javascript Literal
+title: Literal
 date: "2019-10-13"
 template: "post"
 draft: false
@@ -8,11 +8,22 @@ category: "Javascript"
 tags:
   - "Literal"
   - "Literal notation"
-description: "리터럴과 리터럴표기법"
+description: "리터럴과 리터럴표기법에 대해서 알아보자"
 ---
 <span class="notice">
   <em>TIL 내용이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [리터럴(Literal)이란?](#리터럴literal이란)
+  - [값과 리터럴](#값과-리터럴)
+- [리터럴 표기법(Literal notation)이란?](#리터럴-표기법literal-notation이란)
+  - [리터럴 표기법의 사용](#리터럴-표기법의-사용)
+
+</div>
 
 ## 리터럴(Literal)이란?
 리터럴은 <b>리터럴 표기법(Literal notation)으로 생성한 소스 코드 안에서 직접 만들어 낸 고정된 값 그 자체를 말한다.</b>
@@ -37,7 +48,9 @@ var score = 50 + 50;
 리터럴 표기법은 자바스크립트 엔진과 개발자 간의 약속으로 이해하면 편하다. 리터럴 표기법으로 기술한 리터럴은 자바스크립트엔진에 의해 해석되어 값으로 평가된다. 다시 말해, *자바스크립트 엔진은 리터럴 표기법으로 작성된 코드(리터럴)를 만나면, 코드가 실행되는 시점인 런타임(run time)에 리터럴을 해석하고 리터럴에 상응하는 값을 생성한다.*<br>
 따라서 **리터럴은 결국 값이 되므로 리터럴을 값 자체라고 표현할 수 있다**
 
-### 리터럴 표기법을 사용
+<br>
+
+### 리터럴 표기법의 사용
 리터럴 표기법을 사용하면 자바스크립트에서 사용할 수 있는 다양한 타입의 값(숫자, 문자열, 불리언, undefined, null, 객체, 배열, 함수, 정규표현식 등)을 생성할 수 있다.
 
 *아래의 예시로 확인해보자*

@@ -1,5 +1,5 @@
 ---
-title: About Javascript Type Casting
+title: 타입변환(Type Casting)
 date: "2019-10-10"
 template: "post"
 draft: false
@@ -9,11 +9,32 @@ tags:
   - "Type"
   - "명시적 타입변환(Explicit coercion)"
   - "암묵적 타입변환(Implicit coercion)"
-description: "about Javasciprt Type Casting"
+description: "Type Casting에 대해서 알아보자"
 ---
 <span class="notice">
   <em>TIL 이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [타입 변환이란?](#타입-변환이란)
+- [암묵적 타입 변환](#암묵적-타입-변환)
+  - [문자열 타입으로 변환](#문자열-타입으로-변환)
+      - [ES6에 도입된 템플릿 리터럴](#es6에-도입된-템플릿-리터럴)
+  - [숫자 타입으로 변환](#숫자-타입으로-변환)
+      - [산술 연산자](#산술-연산자)
+      - [비교 연산자](#비교-연산자)
+      - [+단항 연산자](#단항-연산자)
+  - [불리언 타입으로 변환](#불리언-타입으로-변환)
+- [명시적 타입 변환](#명시적-타입-변환)
+  - [문자열 타입으로 변환](#문자열-타입으로-변환-1)
+  - [숫자 타입으로 변환](#숫자-타입으로-변환-1)
+  - [불리언 타입으로 변환](#불리언-타입으로-변환-1)
+- [단축 평가★](#단축-평가★)
+
+</div>
 
 ## 타입 변환이란?
 자바스크립트의 모든 값은 타입이 있다.<br>
@@ -452,7 +473,7 @@ getStringLength('hi'); // 2
 
 <div class="reference-site">
 
-  **참고한 사이트**<br>
+  **Reference**<br>
 
   [https://poiemaweb.com](https://poiemaweb.com)
 

@@ -1,5 +1,5 @@
 ---
-title: Property
+title: 프로퍼티(Property)
 date: "2019-10-16"
 template: "post"
 draft: false
@@ -7,11 +7,22 @@ slug: "/posts/javascript/property"
 category: "Javascript"
 tags:
   - "property"
-description: "프로퍼티 정의"
+description: "프로퍼티에 대해서 알아보자"
 ---
 <span class="notice">
   <em>TIL 내용이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [프로퍼티 정의](#프로퍼티-정의)
+- [프로퍼티의 종류](#프로퍼티의-종류)
+- [프토퍼티 Attribute](#프토퍼티-attribute)
+- [내부 슬롯/메소드](#내부-슬롯메소드)
+
+</div>
 
 __*객체의 프로퍼티를 간단히 리마인드 해보자.*__<br>
 
@@ -276,7 +287,7 @@ person.name = 'Kim';
 <br>
 <div class="reference-site">
 
-  **참고한 사이트**<br>
+  **Reference**<br>
 
   [https://poiemaweb.com](https://poiemaweb.com)
 

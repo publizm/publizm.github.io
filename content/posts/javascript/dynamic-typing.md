@@ -1,5 +1,5 @@
 ---
-title: 동적 타이핑
+title: 동적 타이핑(dynamicTyping)
 date: "2019-10-13"
 template: "post"
 draft: false
@@ -9,11 +9,20 @@ tags:
   - "dynamicTyping"
   - "Static type"
   - "Dynamic type"
-description: "동적 타입 언어와 정적 타입 언어"
+description: "동적 타입 언어와 정적 타입 언어에 대해 알아보자"
 ---
 <span class="notice">
   <em>TIL 내용이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [정적 타입 언어(Static/Strong type)](#정적-타입-언어staticstrong-type)
+- [동적 타입 언어](#동적-타입-언어)
+
+</div>
 
 ## 정적 타입 언어(Static/Strong type)
 정적 타입 언어는 *[변수](/posts/javascript/variable)를 선언할때 변수에 할당할 수 있는 값의 종류, 즉 데이터 타입을 사전에 선언해야한다.* 이를 명시적 타입 선언이라 한다.

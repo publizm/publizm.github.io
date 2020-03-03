@@ -8,11 +8,28 @@ category: "Javascript"
 tags:
   - "Primitive"
   - "Reference"
-description: "원시 값과 객체"
+description: "원시 값과 객체에 대해서 알아보자"
 ---
 <span class="notice">
   <em>TIL 이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [데이터 타입이란?](#데이터-타입이란)
+  - [데이터 타입의 분류(ES6 기준)](#데이터-타입의-분류es6-기준)
+  - [데이터 타입이 필요한 이유](#데이터-타입이-필요한-이유)
+- [원시 타입의 값과 객체 타입의 값의 비교](#원시-타입의-값과-객체-타입의-값의-비교)
+- [원시 타입의 값(Immutable value)](#원시-타입의-값immutable-value--원시-값)
+  - [변경 불가능한 값](#변경-불가능한-값)
+  - [값에 의한 전달(Pass by value)](#값에-의한-전달pass-by-value)
+- [객체(참조) 타입의 값(mutable value)](#객체참조-타입의-값mutable-value--객체)
+  - [변경 가능한 값](#변경-가능한-값)
+  - [참조에 의한 전달](#참조에-의한-전달)
+
+</div>
 
 ## 데이터 타입이란?
 데이터 타입이란 값의 종류를 말한다.<br>
@@ -64,13 +81,9 @@ description: "원시 값과 객체"
 <br>
 <br>
 
-## 원시 타입의 값과 객체 타입의 값을 자세히 살펴보자.
+## 원시 타입의 값(Immutable value), (= 원시 값)
 
-<br>
-
-### 원시 타입의 값(Immutable value), (= 원시 값)
-
-#### 변경 불가능한 값
+### 변경 불가능한 값
 값을 변경할 수 없다는 것은 재할당을 할 수 없다는 의미와는 다르다.<br>
 변수는 새로운 값을 재할당하는 것으로 변수의 값을 변경할 수 있다. 변수의 상대 개념인 상수는 재할당이 금지된 변수를 말한다.
 
@@ -84,7 +97,7 @@ __*그림으로 알아보자*__
 <br>
 <br>
 
-#### 값에 의한 전달(Pass by value)
+### 값에 의한 전달(Pass by value)
 
 ``` javascript
 var score = 80;
@@ -106,14 +119,14 @@ __*그림으로 알아보자*__
 __*그림으로 알아보자*__
 ![Primitive value](/images/til/memory_change.jpg "Primitive value")
 
-<hr class="sub" />
+<br>
 
-### 객체(참조) 타입의 값(mutable value), (= 객체)
+## 객체(참조) 타입의 값(mutable value), (= 객체)
 객체는 프로퍼티의 개수가 정해져 있지 않고 동적으로 추가되고 삭제할 수 있다. 또한 프로퍼티의 값에도 제약이 없다. 따라서 객체는 원시 값과 같이 확보해야 할 메모리 공간의 크기를 사전에 정해 둘 수 없다.
 
 > 객체는 *할당* 이 이루어지는 시점에 객체 리터럴이 해석되고 그 결과 객체가 생성된다.
 
-#### 변경 가능한 값
+### 변경 가능한 값
 객체(참조) 타입의 값, 즉 객체는 변경 가능한 값(mutable value)이다.
 
 ``` javascript
@@ -165,7 +178,7 @@ __*그림으로 알아보자*__
 하지만 객체는 이러한 구조적 단점에 따른 부작용이 있다.<br>
 그것은 원시 값과는 다르게 **여러 개의 식별자가 하나의 객체를 공유할 수 있다**는 것이다.
 
-#### 참조에 의한 전달
+### 참조에 의한 전달
 
 ``` javascript
 var person = {
@@ -219,7 +232,7 @@ console.log(copy);   // {name: "Kim", address: "Seoul"}
 
 <div class="reference-site">
 
-  **참고한 사이트**<br>
+  **Reference**<br>
 
   [https://poiemaweb.com](https://poiemaweb.com)
 

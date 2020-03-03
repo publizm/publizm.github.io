@@ -7,11 +7,37 @@ slug: "/posts/javascript/Function"
 category: "Javascript"
 tags:
   - "Function"
-description: "자바스크립트의 함수"
+description: "함수에 대해서 알아보자"
 ---
 <span class="notice">
   <em>잘못된 정보가 있다면 댓글로 의견 부탁드립니다.</em>
 </span>
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [함수란?](#함수란)
+- [함수의 재사용](#함수의-재사용)
+- [함수 리터럴](#함수-리터럴)
+  - [함수 선언문 vs 함수 리터럴](#함수-선언문-vs-함수-리터럴)
+- [함수 정의](#함수-정의)
+  - [함수 선언문](#함수-선언문)
+  - [함수 표현식(Function Expression)](#함수-표현식function-expression)
+  - [함수 선언문과 함수 표현식의 생성시점과 호이스팅 비교](#함수-선언문과-함수-표현식의-생성시점과-호이스팅-비교)
+  - [Function 생성자 함수(Function Constructor)](#function-생성자-함수function-constructor)
+  - [화살표 함수(Arrow Function): ES6](#화살표-함수arrow-function-es6)
+- [함수 호출](#함수-호출)
+- [인수(argument)와 매개변수(parameter)](#인수argument와-매개변수parameter)
+  - [매개변수(parameter)의 개수](#매개변수parameter의-개수)
+- [외부 상태의 변경과 함수형 프로그래밍](#외부-상태의-변경과-함수형-프로그래밍)
+- [반환문](#반환문)
+- [즉시실행함수(IIFE)★](#즉시실행함수iife★)
+- [재귀 함수](#재귀-함수)
+- [중첩 함수(nested function)★](#중첩-함수nested-function★)
+- [콜백함수★](#콜백함수★)
+
+</div>
 
 ## 함수란?
 <b>여러가지의 실행할 문들을 코드 블록으로 감싼 하나의 실행단위이다.</b><br>
@@ -157,7 +183,7 @@ add(2,3) // 5
 - *식별자* 가 있고, 표현식이 아닌 문이다.
 - 코드 블록을 가지고 있다.
 - 문이기 때문에 세미콜론(;)이 필요없다.
-- 함수 호이스팅이 적용되어, <b>**런타임 이전 환경에서 선언과 동시에 함수 이름으로 암묵적으로 변수(식별자)가 생성되고 그 식별자에 함수 객체를 binding 해준다.(이때 코드 블록안에 문들이 실행되는 것은 아니다)**<b> 함수 이름이 식별자는 아니다.
+- 함수 호이스팅이 적용되어, <b>**런타임 이전 환경에서 선언과 동시에 함수 이름으로 암묵적으로 변수(식별자)가 생성되고 그 식별자에 함수 객체를 binding 해준다.(이때 코드 블록안에 문들이 실행되는 것은 아니다)**</b> 함수 이름이 식별자는 아니다.
 - 함수 호이스팅으로 인해 어느 위치(함수 선언문 위쪽 포함)에서도 함수 호출이 가능하다.
 
 <hr class="sub" />
@@ -236,11 +262,13 @@ Function 생성자 함수로 생성한 함수는 함수 선언문이나 함수 �
 <hr class="sub" />
 
 ### 화살표 함수(Arrow Function): ES6
+- prototype 프로퍼티가 없으며 arguments 객체를 생성하지 않는다.
+- 함수 자체의 this, arguments, super, new.target 바인딩을 갖지 않는다.
+- 화살표 함수 내부에서 this, arguments, super, new.target를 참조하면 스코프 체인을 통해 상위 컨텍스트의 this, arguments, super, new.target를 참조한다.
 
 ``` javascript
 var add = (x, y) => x + y;
 ```
-주로 콜백 함수를 만들때 주로 쓴다.
 
 <br>
 <br>
@@ -255,28 +283,35 @@ var add = (x, y) => x + y;
 ## 인수(argument)와 매개변수(parameter)
 
 ``` javascript
-function add(x, y) {
+function add1(x, y) {
   return x + y;
 }
 
-console.log(add(2)); // 1+ y(undefined) = NaN
+console.log(add1(2)); // 1+ y(undefined) = NaN
 // 매개변수는 호출할때 변수 선언이 된다.
-```
 
-``` javascript
-function add(x, y) {
+function add2(x, y) {
   return x + y;
 }
 
-console.log(add(2, 5, 10)); // 7
+console.log(add2(2, 5, 10)); // 7
 // 함수 객체는 argument라는 객체를 가지고 있어 맨 마지막은 버려지지 않고 가지고 있다.
+
+
+function add3(x, x) {
+	return x + x;
+}
+
+console.log(add3(3, 4)); // 8
+// 동일한 매개변수 명을 가지게 되면 마지막 위치에 있는 인수의 값으로 할당된다.
 ```
 위 코드는 자바스크립트 문법상 어떠한 문제도 없으므로 자바스크립트 엔진은 아무런 이의 제기 없이 위 코드를 실행할 것이다. 이러한 상황이 발생하는 이유는
 
 - 자바스크립트 함수는 매개변수와 인수의 개수가 일치하는지 확인하지 않는다.
 - 자바스크립트는 동적 타입 언어이다. 따라서 자바스크립트 함수는 매개변수의 타입을 사전에 지정하지 않는다.
 
-따라서 자바스크립트 함수는 적절한 인수가 전달되었는지 확인이 필요하다.
+따라서 자바스크립트 함수는 아래와 같은 코드로 적절한 인수가 전달되었는지 확인이 필요하다.
+
 ``` javascript
 function add(x, y) {
   if (typeof x !== 'number' || typeof y !== 'number') {
@@ -291,6 +326,7 @@ console.log(add('a', 'b')); // TypeError: 매개변수에 숫자 타입이 아�
 
 // 이런 배보다 배꼽이 더 큰 현상이 일어나 요즘에 타입스크립트를 쓰는 추세이다.
 ```
+
 
 <hr class="sub" />
 
@@ -314,6 +350,64 @@ $.ajax({
 // 객체의 property 순서는 상관없고, property의 key가 중요하기 때문에 입력 순서와는 상관 없어져서 편의해진다.
 // 객체를 변수를 묶지 않고, 한번에 argument로 넘기는 이유는 만약 변수로 담게되면 어느 순간 다른 값에 참조에 의한 전달로 인해 수정될 위험성이 있기 때문이다.
 ```
+
+<hr class="sub" />
+
+### 매개변수 기본값
+함수를 호출할 때 매개변수의 개수만큼 인수를 전달하는 것이 일반적이지만 그렇지 않은 경우에도 에러가 발생하지는 않는다. 함수는 매개변수의 개수와 인수의 개수를 체크하지 않는다. 인수가 부족한 경우, 매개변수의 값은 undefined이다.
+
+``` javascript
+function sum(x, y) {
+  return x + y; // 1 + undefined
+}
+
+console.log(sum(1)); // NaN
+```
+
+매개변수에 적절한 인수가 전달되었는지 함수 내부에서 확인할 필요가 있다.
+
+``` javascript
+function sum(x, y) {
+  // 매개변수의 값이 falsy value인 경우, 기본값을 할당한다.
+  x = x || 0;
+  y = y || 0;
+
+  return x + y;
+}
+
+console.log(sum(1));    // 1
+console.log(sum(1, 2)); // 3
+```
+
+ES6에서는 매개변수 기본값을 사용하여 함수 내에서 수행하던 인수 체크 및 초기화를 간소화할 수 있다. 매개변수 기본값은 매개변수에 인수를 전달하지 않았을 경우에만 유효하다.
+
+``` javascript
+function sum(x = 0, y = 0) {
+  return x + y;
+}
+
+console.log(sum(1));    // 1
+console.log(sum(1, 2)); // 3
+```
+
+매개변수 기본값은 함수 정의 시 선언한 매개변수 개수를 나타내는 함수 객체의 length 프로퍼티와 arguments 객체에 영향을 주지 않는다.
+
+``` javascript
+매개변수 기본값은 함수 정의 시 선언한 매개변수 개수를 나타내는 함수 객체의 length 프로퍼티와 arguments 객체에 영향을 주지 않는다.
+```
+
+``` javascript
+function foo(x, y = 0) {
+  console.log(arguments);
+}
+
+console.log(foo.length); // 1
+
+sum(1);    // Arguments { '0': 1 }
+sum(1, 2); // Arguments { '0': 1, '1': 2 }
+```
+
+<br>
 
 ## 외부 상태의 변경과 함수형 프로그래밍
 argument에서 parameter로 넘길때도
@@ -479,18 +573,20 @@ outer();
 - 나중에 호출되는 것을 의미한다.
 - 콜백함수를 Argument로 전달 받는 고차 함수가 호출한다.
 
-Ajax와 같이 외부에서 콜백함수를 못건들게 하려고.
-선언하면서 줄거냐(유동) 중첩함수처럼 내부에 쓸거냐(고정)의 차이
-내가 원하는 것을 주입 할 수 있고, 중첩함수는 고정 되있다.
-예를들어 flag를 이용해서 if문으로 쓴거랑 비슷한 원리이다.
+콜백 함수가 콜백 함수를 전달받는 함수 내부에만 호출된다면 콜백 함수를 익명 함수 리터럴로 정의하면서 인수로 곧바로 전달하는 것이 일반적이다. 이때 콜백 함수로서 전달된 함수 리터럴은 콜백 함수를 전달받은 함수가 호출될 때 평가되어 생성된다.
+
+중첩 함수가 외부 함수를 돕는 헬퍼 함수의 역할을 하는 것처럼 콜백 함수는 고차함수에 전달되어 헬퍼 함수의 역할을 한다.
+
+단, 중첩 함수는 고정되어 있어서 교체할 수 없지만 콜백 함수는 함수 외부에서 인수로 주입하기 때문에 자유롭게 교체할 수 있다는 장점이 있다. 한마디로 중첩함수와는 다르게 외부에서 바꿔서 껴주는 식, 콜백함수에 의해서 자신의 기능이 변한다.
 
 > 하나의 제품은 전달받는 고차 함수<br>
 무언가를 만드는 기계가 콜백 함수
 
-중첩함수와는 다르게 외부에서 바꿔서 껴주는 식, 콜백함수에 의해서 자신의 기능이 변한다.
 
-*콜백함수를 사용하지 않을 경우의 예시*
+**콜백함수를 사용하지 않을 경우와 콜백함수를 사용했을 경우 예시**
+
 ``` javascript
+// 콜백 함수를 사용하지 않으면 함수를 분리해야 한다.
 function printToUpperCase() {
   var string = 'Hello';
   return string.toUpperCase();
@@ -504,10 +600,9 @@ function printToLowerCase() {
 }
 
 console.log(printToLowerCase()); // hello
-```
 
-*콜백함수를 사용했을때의 예시*
-``` javascript
+
+// 콜백 함수를 외부에서 전달하면 콜백 함수에 따라 다양한 동작을 하는 함수를 만들 수 있다.
 // 콜백 함수를 전달받는 함수
 function print(f) {
   var string = 'Hello';
@@ -531,6 +626,29 @@ var res2 = print(function (str) {
 console.log(res1, res2); // HELLO hello
 ```
 
+콜백 함수는 비동기 처리를 위해 사용하는 일반적인 패턴이다.
+
+주로 이벤트 처리나 Ajax 통신에 많이 이용된다.
+
+또, 고차 함수(Higher-order Function)에서도 사용하는 패턴으로 사용 빈도가 매우 높고 중요한 패턴이다.
+
+**배열의 고차함수에서의 콜백함수 사용예시**
+``` javascript
+// 콜백 함수를 사용하는 고차 함수 map
+var res = [1, 2, 3].map(function (item) {
+  return item * 2;
+});
+
+console.log(res); // [ 2, 4, 6 ]
+
+// 콜백 함수를 사용하는 고차 함수 filter
+res = [1, 2, 3].filter(function (item) {
+  return item % 2;
+});
+
+console.log(res); // [ 1, 3 ]
+```
+
 <br>
 <br>
 <br>
@@ -543,7 +661,7 @@ console.log(res1, res2); // HELLO hello
 
 <div class="reference-site">
 
-  **참고한 사이트**<br>
+  **Reference**<br>
 
   [https://poiemaweb.com](https://poiemaweb.com)
 

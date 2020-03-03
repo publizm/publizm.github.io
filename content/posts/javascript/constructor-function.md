@@ -8,16 +8,36 @@ category: "Javascript"
 tags:
   - "new"
   - "생성자 함수"
-description: "생성자 함수에 의한 객체 생성"
+description: "생성자 함수에 의한 객체 생성에 대해 알아보자"
 ---
 <span class="notice">
   <em>TIL 내용이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
 
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [Object 생성자 함수(built-in)](#object-생성자-함수built-in)
+- [생성자 함수★★](#생성자-함수★★)
+  - [객체 리터럴에 의한 객체 생성 방식](#객체-리터럴에-의한-객체-생성-방식)
+  - [생성자 함수에 의한 객체 생성 방식](#생성자-함수에-의한-객체-생성-방식)
+      - [this란?](#this란)
+  - [내부 메소드 [[Call]]과 [[Construct]]](#내부-메소드-call과-construct)
+      - [constructor와 non-constructor의 구분](#constructor와-non-constructor의-구분)
+  - [생성자 함수의 인스턴스 생성과정★★](#생성자-함수의-인스턴스-생성과정★★)
+      - [1. 인스턴스 생성과 this 바인딩](#1-인스턴스-생성과-this-바인딩)
+      - [2. 인스턴스 초기화](#2-인스턴스-초기화)
+      - [3. 인스턴스 반환](#3-인스턴스-반환)
+  = [new 연산자](#new-연산자)
+  - [new 연산자를 안 붙였을때의 방어코드](#new-연산자를-안-붙였을때의-방어코드)
+      - [new.target(ES6)](#newtargetes6)
+      - [instanceof(ES5)](#instanceofes5)
+</div>
+
 객체를 만드는 방법은 5가지가 있다.
-- 객체 리터럴을 이용해 만드는 방법
+- 객체 리터럴을 이용해 만드는 방법(Object.create)
 - Object 생성자 함수
-- Object.create를 사용하는 방법
 - 생성자 함수로 만드는 방법
 - class를 이용한 방법
 
@@ -148,7 +168,7 @@ function Circle(radius) {
 const circle1 = new Circle(5); // 반지름이 5인 Circle 객체를 생성
 const circle2 = new Circle(10); // 반지름이 10인 Circle 객체를 생성
 
-// 이떄 circle1과 circle2의 객체는 서로 다른 객체이다.
+// 이때 circle1과 circle2의 객체는 서로 다른 객체이다.
 
 console.log(circle1.getDiameter()); // 10
 console.log(circle2.getDiameter()); // 20

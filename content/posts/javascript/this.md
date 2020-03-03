@@ -13,6 +13,19 @@ description: "this에 대해서 알아보자"
   <em>TIL 이므로 잘못된 내용은 댓글 부탁드립니다</em>
 </span>
 
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [this 개요](#this★★)
+  - [함수 호출 방식과 this 바인딩](#함수-호출-방식과-this-바인딩)
+      - [일반함수 호출](#일반함수-호출)
+      - [메소드 호출](#메소드-호출)
+      - [생성자함수의 this](#생성자함수의-this)
+      - [Function.prototype에 의한 간접호출](#functionprototypeapplycallbind-메소드에-의한-간접-호출★)
+
+</div>
+
 동작(Behavior)인 메소드는 자신이 속한 객체의 상태를 나타내는 데이터인 상태 데이터, 즉 프로퍼티를 참고하고 상태를 변경할 수 있어야 한다. 이때 메소드가 자신이 속한 객체의 프로퍼티를 참조하려면 먼저 자신이 속한 객체를 가리키는 식별자를 참조할 수 있어야한다.
 
 객체 리터럴 방식으로 생성한 객체의 경우, 메소드 내부에서 메소드 자신이 속한 객체를 가리키는 식별자를 재귀적으로 참조 할 수 있다.
@@ -330,16 +343,19 @@ apply, call 메소드는 인수로 this와 인수 리스트를 전달받아 함�
 
 apply와 call 메소드의 사용방법은 다음과 같다.
 
-**Function.prototype.apply**
+- Function.prototype.apply
+
 ``` javascript
 // 주어진 this 바인딩과 인수 리스트 배열을 사용하여 함수를 호출한다.
 // thisArg - this로 사용될 객체
 // argsArray - 함수에게 전달할 인수 리스트의 배열 또는 유사 배열 객체
+// 이때 argsArray의 요소를 배열은 배열안에 내용이 하나의 요소로 판단되어 들어간다.
 // returns 호출된 함수의 반환값
 Function.prototype.apply(thisArg[, argsArray])
 ```
 
-**Function.prototype.call**
+- Function.prototype.call
+
 ``` javascript
 // 주어진 this 바인딩과 인수 리스트를 사용하여 함수를 호출한다.
 // thisArg - this로 사용될 객체
@@ -348,7 +364,8 @@ Function.prototype.apply(thisArg[, argsArray])
 Function.prototype.call (thisArg[, arg1[, arg2[, ...]]])
 ```
 
-apply와 call을 사용해보자
+- apply와 call의 사용 예시
+
 ``` javascript
 function getThisBinding() {
   return this;
@@ -371,11 +388,10 @@ console.log(getThisBinding.call(thisArg, 1, 2, 3));
 // Arguments(3) [1, 2, 3, callee: ƒ, Symbol(Symbol.iterator): ƒ]
 // { a: 1 }
 ```
-pply와 call 메소드는 호출할 함수에 인수를 전달하는 방식만 다를 뿐 this로 사용할 객체를 전달하면서 함수를 호출하는 것은 동일하다.
+apply와 call 메소드는 호출할 함수에 인수를 전달하는 방식만 다를 뿐 this로 사용할 객체를 전달하면서 함수를 호출하는 것은 동일하다.
 
 데이터를 어떻게 가지고 있는지 달라진다.<br>
-apply - 배열일 경우<br>
-call - 동적생성일 경우
+apply - 배열일 경우, call - 동적 생성일 경우
 
 ``` javascript
 function convertArgsToArray() {
@@ -394,7 +410,7 @@ function convertArgsToArray() {
 }
 
 // 알아둘 것
-// 함수가 Array.prototype을 못쓰는 이유는 프토로타입 체인이 다르기 떄문이다.
+// 함수가 Array.prototype을 못쓰는 이유는 프토로타입 체인이 다르기 때문이다.
 convertArgsToArray(1, 2, 3); // [ 1, 2, 3 ] 인수는 자료구조가 아니고, 콤마로 구분되어진 값일 뿐이다.
 ```
 
@@ -417,7 +433,7 @@ console.log(getThisBinding.bind(thisArg)); // getThisBinding
 // bind 메소드는 함수를 호출하지는 않으므로 명시적으로 호출해야 한다.
 console.log(getThisBinding.bind(thisArg)()); // {a: 1}
 ```
-bind 메소드는 메소드의 this와 메소드 내부의 중첩 함수 또는 콜백 함수의 this가 불일치하는 문제를 해결하기 위해 유용하게 사용된다. 아래 예제를 살펴보자.
+**bind 메소드는 메소드의 this와 메소드 내부의 중첩 함수 또는 콜백 함수의 this가 불일치하는 문제를 해결하기 위해 유용하게 사용된다.** 아래 예제를 살펴보자.
 
 ``` javascript
 function Person(name) {
@@ -476,7 +492,7 @@ person.doSomething(foo); // Lee
 
 <div class="reference-site">
 
-  **참고한 사이트**<br>
+  **Reference**<br>
 
   [https://poiemaweb.com](https://poiemaweb.com)
 

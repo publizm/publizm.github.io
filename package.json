@@ -38,6 +38,7 @@
     "disqus"
   ],
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "bluebird": "^3.5.5",
     "classnames": "^2.2.6",
     "codecov": "^3.5.0",
@@ -53,6 +54,7 @@
     "gatsby-plugin-netlify-cms": "^4.1.13",
     "gatsby-plugin-offline": "^3.0.3",
     "gatsby-plugin-optimize-svgs": "^1.0.3",
+    "gatsby-plugin-page-progress": "^2.0.12",
     "gatsby-plugin-react-helmet": "^3.1.6",
     "gatsby-plugin-sass": "^2.1.13",
     "gatsby-plugin-sharp": "^2.2.20",
@@ -80,8 +82,10 @@
     "prismjs": "^1.17.1",
     "react": "^16.9.0",
     "react-disqus-comments": "^1.4.0",
-    "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-dom": "^16.8.5",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.4.1",
+    "styled-icons": "^8.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.6.0",

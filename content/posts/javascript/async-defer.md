@@ -1,5 +1,5 @@
 ---
-title: About Javascript Attribute
+title: defer and async Attribute
 date: "2019-09-29"
 template: "post"
 draft: false
@@ -9,9 +9,25 @@ tags:
   - "Javascript"
   - "defer"
   - "async"
-description: "attribute of javascript"
+description: "defer속성과 async속성에 대해 알아보자"
 ---
-## Javascript의 async와 defer 속성
+
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [브라우저 동작 원리](#브라우저-동작-원리)
+- [일반적인 실행](#일반적인-실행)
+- [async 속성을 추가한 경우의 실행](#async-속성을-추가한-경우의-실행)
+- [defer 속성을 추가한 경우의 실행](#defer-속성을-추가한-경우의-실행)
+- [언제 사용할 것인가?](#언제-사용할-것인가)
+  - [script 요소는 어디에 있는가?](#1-script-요소는-어디에-있는가)
+  - [해당 스크립트가 종속성이 있는가?](#2-해당-스크립트가-종속성이-있는가)
+  - [스크립트가 완전히 구문이 분석된 DOM에 의존하는가?](#3-스크립트가-완전히-구문이-분석된-dom에-의존하는가)
+
+</div>
+
+## 브라우저 동작 원리
 
 웹 브라우저는 **Html**을 랜더링하는 과정에서 **CSS** 또는 **Javascript**를 만나면 **동기**적으로 처리한다.
 한마디로 웹 페이지를 읽는데있어서 해당 내용을 해석하고 실행되기전에는 이후에 나오는 내용을 처리 하지 않는다.

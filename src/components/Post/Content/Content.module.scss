@@ -20,7 +20,7 @@
 
   &__body {
     & * {
-      word-break: keep-all;
+      word-break: break-all;
     }
     & figure {
       @include margin-bottom(1);

@@ -3,13 +3,22 @@ title: Git Bash and Shell Command
 date: "2019-09-08"
 template: "post"
 draft: false
-slug: "/posts/git-bash-and-Shell-command/"
+slug: "/posts/git/git-bash-and-Shell-command/"
 category: "Git"
 tags:
   - "Git"
   - "Shell"
 description: "Git Bash install and Shell Command"
 ---
+<div id="toc">
+
+**:link:  Table Of Contents**
+
+- [Git bash Install](#git-bash-install)
+- [Shell Command](#lets-learn-major-shell-command)
+
+</div>
+
 ## Git bash Install
 
 - Go to https://gitforwindows.org/
