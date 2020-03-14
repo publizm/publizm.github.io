@@ -101,7 +101,6 @@
 <url> <loc>https://publizm.github.io/posts/Etc/Browser</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/Etc/Cookie_Storage</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/VariableLifeCycle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/posts/javascript/TypeCasting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/Etc/FunctionalProgramming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/Etc/Keyword</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/Etc/ObejctOrientedProgramming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -148,6 +147,7 @@
 <url> <loc>https://publizm.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/async-defer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/variable</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/posts/javascript/TypeCasting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/adaptive-web-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/ajax-asynchronous-java-script-and-xml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/analog-clock</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
