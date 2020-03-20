@@ -140,9 +140,6 @@
 <url> <loc>https://publizm.github.io/posts/react/Props_State</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/concept</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/styling_component</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/posts/teamproject/onello/onello</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/posts/toyproject/todo_class</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/posts/toyproject/todo_function</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/Array</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/async-defer</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -168,7 +165,6 @@
 <url> <loc>https://publizm.github.io/tag/css</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/call-stack</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/class</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/tag/class-component</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/client-side</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/closure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/concurrency</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -213,7 +209,6 @@
 <url> <loc>https://publizm.github.io/tag/oop</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/object</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/object-oriented-programming</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/tag/onello</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/operator</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/primitive</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/primitive-type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -240,8 +235,6 @@
 <url> <loc>https://publizm.github.io/tag/state</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/static-type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/stop-watch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/tag/team-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/tag/todo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/toggle-display</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/toggle-side-nav</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -311,7 +304,6 @@
 <url> <loc>https://publizm.github.io/tag/tab-ui</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/this</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/tree</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/tag/trello</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/undefined</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/use-callback</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/use-effect</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -347,8 +339,6 @@
 <url> <loc>https://publizm.github.io/category/react/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/react/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/redux</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/category/team-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/category/toy-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/algorithm/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/algorithm/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
