@@ -130,7 +130,6 @@
 <url> <loc>https://publizm.github.io/posts/react/env</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/Hook</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/htmlRendering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/posts/react/Control</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/jsx</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/LifeCycle</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/OptimizedHook</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -145,6 +144,7 @@
 <url> <loc>https://publizm.github.io/posts/javascript/variable</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/TypeCasting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/execution-context</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/posts/react/Control</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/adaptive-web-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/ajax-asynchronous-java-script-and-xml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/analog-clock</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
