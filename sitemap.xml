@@ -63,7 +63,6 @@
 <url> <loc>https://publizm.github.io/posts/css/about-css/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/css/CSS-Flex/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/daily/191113_kakao</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://publizm.github.io/posts/html/block-and-inline-elements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/git/git-bash-and-Shell-command/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/html/html-entities/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/html/html-Form/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -145,6 +144,7 @@
 <url> <loc>https://publizm.github.io/posts/javascript/TypeCasting</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/javascript/execution-context</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/react/Control</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/posts/html/block-and-inline-elements/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/adaptive-web-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/ajax-asynchronous-java-script-and-xml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/analog-clock</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
