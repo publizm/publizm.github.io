@@ -148,6 +148,7 @@
 <url> <loc>https://publizm.github.io/posts/algorithm/recursive_call</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/algorithm/selection_sort</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/posts/algorithm/bubble_sort</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/posts/til/01</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/adaptive-web-design</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/ajax-asynchronous-java-script-and-xml</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/analog-clock</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -191,6 +192,8 @@
 <url> <loc>https://publizm.github.io/tag/git</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/html</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/html-5</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/tag/img-error-fallback</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/tag/img-tag</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/inline-elements</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/input</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/jsx</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -240,6 +243,7 @@
 <url> <loc>https://publizm.github.io/tag/state</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/static-type</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/stop-watch</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/tag/til</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/team-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/todo</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/tag/toggle-display</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -347,6 +351,7 @@
 <url> <loc>https://publizm.github.io/category/react/page/1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/react/page/2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/redux</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://publizm.github.io/category/til</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/team-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/toy-project</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://publizm.github.io/category/algorithm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
