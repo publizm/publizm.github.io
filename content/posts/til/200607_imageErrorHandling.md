@@ -1,5 +1,5 @@
 ---
-title: TIL - nextjs를 활용한 서버사이드 렌더링 프로젝트에서 img 에러 핸들링하기
+title: nextjs를 활용한 서버사이드 렌더링 프로젝트에서 img 에러 핸들링하기
 date: '2020-06-07'
 template: 'post'
 draft: false
@@ -9,7 +9,7 @@ tags:
   - 'TIL'
   - 'Img tag'
   - 'Img error fallback'
-description: '카카오맵 API 활용해보기'
+description: '서버사이드렌더링 환경에서 이미지 에러 핸들링하기'
 ---
 
 <span class="notice">
