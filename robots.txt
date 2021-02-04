@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://publizm.github.io/sitemap.xml
-Host: https://publizm.github.io
