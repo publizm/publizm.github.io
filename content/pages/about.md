@@ -8,4 +8,4 @@ socialImage: "/media/image-2.jpg"
 
 ![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](/media/image-2.jpg)
 
-Publee입니다.
+프론트엔드 개발자 Publee입니다.
